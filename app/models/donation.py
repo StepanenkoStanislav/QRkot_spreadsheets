@@ -12,4 +12,5 @@ class Donation(AbstractBaseModelInvest):
 
     def __repr__(self) -> str:
         return (f'user_id {self.user_id}, '
-                f'comment {self.comment[:20]}' + super().__repr__())
+                f'comment {self.comment}, '
+                f'{super().__repr__()}')

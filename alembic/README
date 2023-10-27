@@ -1,1 +1,10 @@
 Generic single-database configuration.
+
+Основные команды alembic
+
+alembic revision --autogenerate -m "message"  # Создать ревизию с сообщением "message"
+alembic upgrade head  # Применить все миграции к БД
+alembic upgrade revision_id  # Применить все миграции до ревизии revision_id
+alembic downgrade base  # Откатить все миграции
+alembic downgrade revision_id  # Откатить все миграции до ревизии revision_id
+alembic history  # Просмотреть историю

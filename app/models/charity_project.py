@@ -11,4 +11,4 @@ class CharityProject(AbstractBaseModelInvest):
     description = Column(Text, nullable=False)
 
     def __repr__(self) -> str:
-        return f'name {self.name[:20]}, ' + super().__repr__()
+        return f'name {self.name}, {super().__repr__()}'
